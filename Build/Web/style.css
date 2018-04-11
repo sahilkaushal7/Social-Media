@@ -1,0 +1,271 @@
+body {
+    
+    background-image: url("1874279.jpg");
+}
+
+.container {
+    
+    width: 1080px;
+    margin: 0 auto;
+   
+}
+header{
+    height: 250px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    
+}
+.navmenu {
+    list-style: none;
+    margin: 5px;
+    padding: 2px;
+    padding-bottom: 2px;
+}
+
+.navmenu li{
+    float: left;
+    min-width: 8em;
+    margin-right: 0.5em;
+    text-align: center;
+    
+}
+
+.navmenu li a:link,
+.navmenu li a:visited{
+    background-color: antiquewhite;
+    display: flex;
+    padding: 0.2em;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0 0.2em 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px rgba(43,43,77,0.5);
+    
+}
+.navmenu li a:hover {
+    background-color:aquamarine;
+     /*-webkit-transform: scale(2,2);
+    -ms-transform: scale(2,2);
+    transform: scale(2,2);*/
+    animation: myRotate 3s infinite;
+    -webkit-animation: myRotate 3s infinite;
+    -moz-animation: myRotate 3s infinite;
+    
+}
+.navmenu a {
+    display: block;
+    width: 80px;
+}
+.clear {
+    clear: both;
+}
+p {
+    font-family: cursive;
+    float: left;
+}
+
+#mainBody{
+    position: relative;
+    
+}
+
+
+#Left{
+    background-color: purple;
+    box-shadow: 10px 10px 5px #3333ff;
+    width:  40%;
+    float: left;
+    height: 200px;
+    padding:  10px;
+    margin:  20px;
+    
+}
+
+#Right{
+    background-color: purple;
+    box-shadow: 10px 10px 5px #3333ff;
+    width:  40%;
+    float: right;
+    height: 200px;
+    padding:  10px;
+    margin:  20px;
+}
+#Right img{
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+.message
+{
+    height: 100px;
+    overflow: scroll;
+}
+#Newsletter{
+    background-color: coral;
+    box-shadow: 10px 10px 5px #3333ff;
+    float:left;
+    padding : 60px;
+    padding-left:20px;
+    padding-right:20px; 
+    width: 30%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#input
+{
+    margin-right: 2px;
+    
+}
+#Welcome{
+    background-color: purple;
+    float: left;
+    width: 50%;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    padding-left : 20px;
+    padding-right: 20px; 
+    margin-left: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px #3333ff;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 10px 10px 5px red;
+}
+.textarea
+{
+    height: 150px;
+    width: 350px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: inherit;
+}
+
+
+/* ANIMATION */
+@keyframes fadeIn {from {opacity: 0;} to {opacity:1;} }
+@-webkit-keyframes fadeIn{from {opacity : 0;} to {opacity :1;}}
+@-moz-keyframes fadeIn{from {opacity : 0;} to {opacity :1;}}
+
+.fade-in {
+    opacity: 0;
+    
+    animation: fadeIn ease-in 1;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+
+@keyframes fadeOut {from {opacity: 1;} to {opacity:0;} }
+@-webkit-keyframes fadeOut{from {opacity: 1;} to {opacity:0;} }
+@-moz-keyframes fadeOut{from {opacity: 1;} to {opacity:0;} }
+
+.fade-out {
+    opacity: 1;
+    
+    animation: fadeOut ease-in 1;
+    -webkit-animation: fadeOut ease-in 1;
+    -moz-animation: fadeOut ease-in 1;
+    
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.myFadeOut:hover {
+     opacity: 1;
+    
+    animation: fadeOut ease-in 1;
+    -webkit-animation: fadeOut ease-in 1;
+    -moz-animation: fadeOut ease-in 1;
+    
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    
+}
+
+/*rotate*/
+@keyframes myRotate
+{
+    0% {transform: rotate(0deg); }
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+-webkit-@keyframes myRotate
+{
+    0% {transform: rotate(0deg); }
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+-moz-@keyframes myRotate
+{
+    0% {transform: rotate(0deg); }
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+
+/*Movement*/
+@keyframes myMove{
+    0% {left: 0px;}
+    25% {left: 125px;}
+    50% {left: 250px;}
+    75% {left: 125px;}
+    100% {left: 0px;}
+}
+
+-webkit-@keyframes myMove{
+    0% {left: 0px;}
+    25% {left: 125px;}
+    50% {left: 250px;}
+    75% {left: 125px;}
+    100% {left: 0px;}
+}
+
+-moz-@keyframes myMove{
+    0% {left: 0px;}
+    25% {left: 125px;}
+    50% {left: 250px;}
+    75% {left: 125px;}
+    100% {left: 0px;}
+}
+
+.Welcome h2{
+    position: relative;
+    
+    animation: myMove 5s infinite;
+    -webkit-animation: myMove 5s infinite;
+    -moz-animation: myMove 5s infinite;
+}
+
+.friends-list
+{
+    list-style:none;
+}
